@@ -20,8 +20,9 @@
     self.codigoLabel.text = self.detalheTransacao.codigo;
     self.descricaoLabel.text = self.detalheTransacao.descricao;
     self.equipeResponsavelLabel.text = self.detalheTransacao.equipeResponsavel;
-    
+
 }
+
 
 
 @end

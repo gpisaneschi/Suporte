@@ -24,14 +24,17 @@
     self.ramalLabel.text = self.detalheContato.ramal;
     self.telefoneLabel.text = self.detalheContato.telResidencial;
     self.celularLabel.text = self.detalheContato.celular;
-    
-    if (self.telefoneLabel.text.length == 0) {
-        //self.telefoneCell.;
-    }
-    
 
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    NSString *cifra = self.celularLabel.text;
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:cifra]];
+    NSLog(@"after call %@",cifra);
+    
+
+}
 
 
 #pragma mark - Table view data source

@@ -25,6 +25,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *ramalLabel;
 @property (weak, nonatomic) IBOutlet UILabel *telefoneLabel;
 @property (weak, nonatomic) IBOutlet UILabel *celularLabel;
-
+-(IBAction)callPhone:(id)sender;
 
 @end
